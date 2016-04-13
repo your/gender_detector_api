@@ -24,11 +24,14 @@ Change `DEFAULT_COUNTRY` and `FALLBACK_GENDER` in [`app/config/initializers/gend
 Add/replace auth tokens in [`app/config/auth.yml`](../master/config/auth.yml)
 (or implement your own authentication logic)
 
+You will have to pass it as value of a `X-Client-Token` request header.
+
 ## Test it
 
 * Endpoint: `POST /api/v1/gender.json`
 * Mandatory params: `list`
-* Optional fields: `country`
+* Optional params: `country`
+* Mandatory authentication header: `X-Client-Token`
 
 ### Example
 **Request:**
@@ -41,6 +44,8 @@ POST /api/v1/gender.json
     "list": ["Giuseppe", "Sara", "Clara"]
   }
 }
+
+X-Client-Token: 1337*1337
 ```
 
 **Response:**
