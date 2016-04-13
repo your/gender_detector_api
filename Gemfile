@@ -4,8 +4,8 @@ ruby '2.2.3'
 
 gem 'rails', '4.2.6'
 
-gem 'unicorn'
-gem 'unicorn-rails'
+# Use Unicorn as the app server
+# gem 'unicorn'
 
 gem 'gender_detector'
 
