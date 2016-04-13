@@ -2,7 +2,7 @@
 
 API-only Rails app providing fast gender names resolution.
 
-Production-ready.
+**Production-ready** (with Procfile for Heroku).
 
 
 ## Dependencies
