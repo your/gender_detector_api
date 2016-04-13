@@ -9,8 +9,8 @@ class Api::V1::GenderController < ApplicationController
     def _genderize(data)
       {
         country: data[:country],
-        list:    data[:list].map do |name|
-                   [name, Gender.get(name, data[:country].to_sym)]
+        list:    data[:list].uniq.map(&:titleize).map do |name|
+                   [name, Gender.get(name, data[:country].downcase.to_sym)]
                  end
       }
     end
