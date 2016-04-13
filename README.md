@@ -14,14 +14,14 @@ The [gender_detector](https://github.com/bmuller/gender_detector) gem is used to
 
 ### Defaults
 
-Change `DEFAULT_COUNTRY` and `FALLBACK_GENDER` in [`app/config/initializers/gender_detector.rb`](../blob/master/app/config/initializers/gender_detector.rb)
+Change `DEFAULT_COUNTRY` and `FALLBACK_GENDER` in [`app/config/initializers/gender_detector.rb`](../master/app/config/initializers/gender_detector.rb)
 
 (default gender is `f`.. you know.. :))
 
 
 ### Auth
 
-Add/replace auth tokens in [`app/config/auth.yml`](../blob/master/app/config/auth.yml)
+Add/replace auth tokens in [`app/config/auth.yml`](../master/app/config/auth.yml)
 (or implement your own authentication logic)
 
 ## Test it
