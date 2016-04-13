@@ -1,11 +1,13 @@
 require 'gender_detector'
 
+# Choose these only:
 DEFAULT_COUNTRY   = :italy
+FALLBACK_GENDER   = 'f'
+
+# No further config required.
 ALLOWED_COUNTRIES = GenderDetector::COUNTRIES
 
 class GenderDetector
-  FALLBACK_GENDER = 'f'
-
   def get(*args)
     case get_gender(*args)
       when :male then 'm'
