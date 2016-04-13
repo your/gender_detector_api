@@ -1,0 +1,13 @@
+{
+  "names": {
+    "country": "<%= @results[:country] %>",
+    "list": [
+      <% @results[:list].each.with_index do |name,i| -%>
+      {
+        "name": "<%= name.first %>",
+        "gender": "<%= name.second %>"
+      }<% if i < @results[:list].size-1 %>,<% end %>
+      <% end -%>
+    ]
+  }
+}
