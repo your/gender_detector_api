@@ -66,6 +66,7 @@ X-Client-Token: 1337*1337
       },
         "name": "Clara",
         "gender": "f"
+      }
     ]
   }
 }
