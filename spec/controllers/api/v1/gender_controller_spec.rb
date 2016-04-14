@@ -45,7 +45,7 @@ RSpec.describe Api::V1::GenderController, type: :controller do
           end
 
           it "should default to the one set in DEFAULT_COUNTRY" do
-            JSON.parse(response.body).to_hash ; expect(JSON.parse(response.body).to_hash['names']['country']).to eq(DEFAULT_COUNTRY.to_s)
+            expect(JSON.parse(response.body).to_hash['names']['country']).to eq(DEFAULT_COUNTRY.to_s)
           end
         end
       end
