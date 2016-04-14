@@ -72,7 +72,7 @@ X-Client-Token: 1337*1337
 }
 ```
 
-Unathorized calls or with wrong paramters will receive a `403 Unauthorized` and `400 Bad Request` status with a blank body respectively.
+Unathorized calls or with wrong parameters will receive a `403 Unauthorized` and `400 Bad Request` status with a blank body respectively.
 
 
 ## License: MIT
